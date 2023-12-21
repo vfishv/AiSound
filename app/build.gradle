@@ -1,9 +1,11 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+//apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion compileSdkValue
+    namespace "io.microshow.aisoundapp"
+
     defaultConfig {
         applicationId "io.microshow.aisoundapp"
         minSdkVersion minSdkValue
@@ -38,7 +40,7 @@ dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
-    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
 
     //动态权限
     api 'com.github.tbruyelle:rxpermissions:0.10.2'

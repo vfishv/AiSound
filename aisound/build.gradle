@@ -2,6 +2,9 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion compileSdkValue
+    namespace "io.microshow.aisound"
+    ndkVersion "16.1.4479499"
+
     defaultConfig {
         minSdkVersion minSdkValue
         targetSdkVersion targetSdkValue
@@ -44,6 +47,6 @@ android {
 dependencies {
     api fileTree(dir: 'libs', include: ['*.jar'])
     //rxjava and rxandroid
-    api 'io.reactivex.rxjava2:rxandroid:2.1.0'
-    api 'io.reactivex.rxjava2:rxjava:2.2.4'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    api 'io.reactivex.rxjava2:rxjava:2.2.21'
 }
